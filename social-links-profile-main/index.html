@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Link App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="appTitle">SoMe Social Link App</h1>
+      <div id="formContainer">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" />
+        <br />
+        <label for="city">City:</label>
+        <input type="text" id="city" placeholder="Enter your city" />
+        <br />
+        <label for="country">Country:</label>
+        <input type="text" id="country" placeholder="Enter your country" />
+        <br />
+        <label for="profession">Profession:</label>
+        <input
+          type="text"
+          id="profession"
+          placeholder="Enter your profession"
+        />
+        <br />
+        <label for="profilePic">Profile Picture:</label>
+        <input type="file" id="profilePic" accept="image/*" />
+        <br />
+        <div id="socialLinksContainer">
+          <label for="socialLink1">Social Links:</label>
+          <input
+            type="text"
+            class="social-link"
+            id="socialLink1"
+            placeholder="Enter social link"
+          />
+        </div>
+        <button onclick="addSocialLink()">Add Social Link</button>
+        <br />
+        <button onclick="generateLink()">Submit</button>
+        <button onclick="resetForm()">Reset</button>
+      </div>
+      <div id="result" style="display: none"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
